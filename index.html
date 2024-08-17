@@ -3,51 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayem</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Khandokar Md. Nayem - CS Ph.D. Candidate</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .main-content {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        .header {
+            background: linear-gradient(to bottom right, #2c3e50, #3498db);
+            color: white;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .profile-img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        .nav-item {
+            margin: 10px 0;
+        }
+        .nav-item a {
+            color: #ddd;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>NAYEM</h1>
-            <p>Welcome to my website</p>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                Hi! I am Nayem, a web developer and designer. I love creating beautiful and functional websites.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                You can reach me at <a href="mailto:nayem@example.com">nayem@example.com</a>.
-            </p>
-        </section>
-
-        <footer>
-            <p>&copy; 2023 Nayem. All rights reserved.</p>
-        </footer>
+        <div class="sidebar">
+            <img src="profile-image.jpg" alt="Khandokar Md. Nayem" class="profile-img">
+            <h2>Khandokar Md. Nayem</h2>
+            <p>CS Ph.D. Candidate</p>
+            <nav>
+                <div class="nav-item"><a href="#intro">Intro</a></div>
+                <div class="nav-item"><a href="#about">About me</a></div>
+                <div class="nav-item"><a href="#publications">Publications</a></div>
+                <div class="nav-item"><a href="#experience">Experience</a></div>
+                <div class="nav-item"><a href="#education">Education</a></div>
+                <div class="nav-item"><a href="#projects">Projects</a></div>
+                <div class="nav-item"><a href="#contact">Contact</a></div>
+            </nav>
+        </div>
+        <div class="main-content">
+            <header class="header">
+                <h1>Research Assistant, ASPIRE research lab</h1>
+                <p>Indiana University, Bloomington, IN, USA</p>
+                <p>Research focus on Machine Learning, Deep Learning, Speech/Audio Processing, NLP, DSP</p>
+            </header>
+            <div class="content">
+                <h2>About Me</h2>
+                <p>I am a Ph.D. Candidate in Luddy School of Informatics, Computing, and Engineering (Luddy SICE) at Indiana University, Bloomington. Additionally, I am completing my Ph.D. minor in Cognitive Science at Indiana University. I am working as a research assistant under the supervision of Professor Donald S. Williamson at the ASPIRE research lab.</p>
+                <!-- Add more content sections here -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
