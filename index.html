@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorour Fatemi</title>
-     <style>
+    <style>
         body, html {
             margin: 0;
             padding: 0;
@@ -61,63 +61,39 @@
         .btn:hover {
             background-color: #d0d0d0;
         }
-        .recent-news {
-            margin-top: 20px;
-        }
-        .news-item {
-            margin-bottom: 15px;
-        }
-        .news-date {
-            font-weight: bold;
-            color: #666;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
         .section {
             margin-bottom: 40px;
         }
         .section h2 {
+            color: #2c3e50;
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-      .education-section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+        .section-content {
+            margin-left: 20px;
         }
-        .education-item {
+        .news-item, .publication-item, .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+        .news-date, .publication-authors, .experience-date, .education-date {
+            font-style: italic;
+            color: #666;
+        }
+        .publication-title, .experience-title, .education-degree {
+            font-weight: bold;
+        }
+        .education-item, .experience-item {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 20px;
         }
-        .education-left {
+        .education-left, .experience-left {
             flex: 1;
         }
-        .education-right {
+        .education-right, .experience-right {
             flex: 0 0 120px;
             text-align: right;
-        }
-        .education-degree {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        .education-institution, .education-minor, .education-advisors {
-            color: #4169e1; /* Royal blue */
-            margin-bottom: 3px;
-        }
-        .education-date {
-            color: #b8860b; /* Dark goldenrod */
-        }
-        .publication-title, .experience-title, .education-degree, .project-title {
-            font-weight: bold;
-        }
-        .publication-authors, .experience-date, .education-date, .project-date {
-            font-style: italic;
-            color: #666;
         }
     </style>
 </head>
@@ -126,14 +102,11 @@
         <div class="sidebar">
             <img src="prof.jpg" alt="Sorour Fatemi" class="profile-img">
             <h2>Sorour Fatemi</h2>
-            <p></p>
             <nav>
-                <div class="nav-item"><a href="#intro">Intro</a></div>
                 <div class="nav-item"><a href="#about">About me</a></div>
                 <div class="nav-item"><a href="#publications">Publications</a></div>
                 <div class="nav-item"><a href="#experience">Experience</a></div>
                 <div class="nav-item"><a href="#education">Education</a></div>
-                <div class="nav-item"><a href="#projects">Projects</a></div>
                 <div class="nav-item"><a href="#contact">Contact</a></div>
             </nav>
         </div>
@@ -146,13 +119,12 @@
             <div class="content">
                 <section id="about" class="section">
                     <h2>About Me</h2>
-                    <p>I am a Ph.D. Candidate in Management Information Systems at <a href="https://www.uic.edu/">University of Illinois at Chicago</a>. I am working as a research assistant under the supervision of Professor <a href="https://yuhenghu.com/">Yuheng Hu</a>.</p>
-                    <p>My PhD research focuses on Large Language Models (LLMs) with interdisciplinary research interests in LLMs for finance.</p>
-
-                    <a href="#" class="btn">📄 Get my resume</a>
-                    <a href="#" class="btn">📄 Get my CV</a>
-
-                    <div class="recent-news">
+                    <div class="section-content">
+                        <p>I am a Ph.D. Candidate in Management Information Systems at <a href="https://www.uic.edu/">University of Illinois at Chicago</a>. I am working as a research assistant under the supervision of Professor <a href="https://yuhenghu.com/">Yuheng Hu</a>.</p>
+                        <p>My PhD research focuses on Large Language Models (LLMs) with interdisciplinary research interests in LLMs for finance.</p>
+                        <a href="#" class="btn">📄 Get my resume</a>
+                        <a href="#" class="btn">📄 Get my CV</a>
+                         <div class="recent-news">
                     <h2>Recent News</h2>
                     <div class="news-item">
                         <span class="news-date">August 2024:</span> Accepted paper at 2024 DSI Annual Conference for oral presentation.
@@ -180,78 +152,76 @@
                     </div>
                 </div>
 
+                    </div>
                 </section>
 
                 <section id="publications" class="section">
                     <h2>Publications</h2>
-                    <div class="publication-item">
-                        <div class="publication-title">Title of Your Publication</div>
-                        <div class="publication-authors">Authors: Sorour Fatemi, et al.</div>
-                        <div class="publication-venue">Conference/Journal Name, Year</div>
-                        <div class="publication-description">Brief description or abstract of the publication.</div>
+                    <div class="section-content">
+                        <div class="publication-item">
+                            <div class="publication-title">Title of Your Publication</div>
+                            <div class="publication-authors">Authors: Sorour Fatemi, et al.</div>
+                            <div class="publication-venue">Conference/Journal Name, Year</div>
+                            <div class="publication-description">Brief description or abstract of the publication.</div>
+                        </div>
+                        <!-- Add more publication items as needed -->
                     </div>
-                    <!-- Add more publication items as needed -->
                 </section>
 
                 <section id="experience" class="section">
                     <h2>Experience</h2>
-                    <div class="experience-item">
-                        <div class="experience-title">Research Assistant</div>
-                        <div class="experience-date">Start Date - Present</div>
-                        <div class="experience-organization">University of Illinois at Chicago</div>
-                        <div class="experience-description">
-                            <ul>
-                                <li>Description of your responsibilities and achievements</li>
-                                <li>Another key point about your work</li>
-                            </ul>
+                    <div class="section-content">
+                        <div class="experience-item">
+                            <div class="experience-left">
+                                <div class="experience-title">Research Assistant</div>
+                                <div class="experience-organization">University of Illinois at Chicago</div>
+                                <ul>
+                                    <li>Description of your responsibilities and achievements</li>
+                                    <li>Another key point about your work</li>
+                                </ul>
+                            </div>
+                            <div class="experience-right">
+                                <div class="experience-date">Start Date - Present</div>
+                            </div>
                         </div>
+                        <!-- Add more experience items as needed -->
                     </div>
-                    <!-- Add more experience items as needed -->
                 </section>
 
-                <section id="education" class="section education-section">
-                <h2>Education</h2>
-        
-        <div class="education-item">
-            <div class="education-left">
-                <div class="education-degree">Ph.D. in Computer Science</div>
-                <div class="education-institution">Indiana University, Bloomington, IN, USA</div>
-                <div class="education-minor">Minor in Cognitive Science</div>
-                <div class="education-advisors">Advisors: David J. Crandall, Donald S. Williamson</div>
-            </div>
-            <div class="education-right">
-                <div class="education-date">April 2024</div>
-            </div>
-        </div>
-
-        <div class="education-item">
-            <div class="education-left">
-                <div class="education-degree">M.Sc. in Computer Science</div>
-                <div class="education-institution">Indiana University, Bloomington, IN, USA</div>
-            </div>
-            <div class="education-right">
-                <div class="education-date">December 2019</div>
-            </div>
-        </div>
-
-        <div class="education-item">
-            <div class="education-left">
-                <div class="education-degree">B.Sc. in Computer Science & Engineering (CSE)</div>
-                <div class="education-institution">Bangladesh University of Engineering & Technology (BUET),</div>
-                <div class="education-institution">Dhaka, Bangladesh</div>
-            </div>
-            <div class="education-right">
-                <div class="education-date">July 2014</div>
-            </div>
-        </div>
-        </section>
+                <section id="education" class="section">
+                    <h2>Education</h2>
+                    <div class="section-content">
+                        <div class="education-item">
+                            <div class="education-left">
+                                <div class="education-degree">Ph.D. in Computer Science</div>
+                                <div class="education-institution">Indiana University, Bloomington, IN, USA</div>
+                                <div class="education-minor">Minor in Cognitive Science</div>
+                                <div class="education-advisors">Advisors: David J. Crandall, Donald S. Williamson</div>
+                            </div>
+                            <div class="education-right">
+                                <div class="education-date">April 2024</div>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-left">
+                                <div class="education-degree">M.Sc. in Computer Science</div>
+                                <div class="education-institution">Indiana University, Bloomington, IN, USA</div>
+                            </div>
+                            <div class="education-right">
+                                <div class="education-date">December 2019</div>
+                            </div>
+                        </div>
+                        <!-- Add more education items as needed -->
+                    </div>
+                </section>
 
                 <section id="contact" class="section">
                     <h2>Contact</h2>
-                    <p>Email: your.email@example.com</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></p>
-                    <p>GitHub: <a href="https://github.com/yourusername">Your GitHub Profile</a></p>
-                    <!-- Add more contact information as needed -->
+                    <div class="section-content">
+                        <p>Email: your.email@example.com</p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></p>
+                        <p>GitHub: <a href="https://github.com/yourusername">Your GitHub Profile</a></p>
+                    </div>
                 </section>
             </div>
         </div>
