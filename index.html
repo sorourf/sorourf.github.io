@@ -326,14 +326,26 @@
 
     <script defer>
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.bib-link').forEach(button => {
-        button.addEventListener('click', function() {
+    console.log('DOM fully loaded');
+    const bibLinks = document.querySelectorAll('.bib-link');
+    console.log('Found ' + bibLinks.length + ' bib links');
+    
+    bibLinks.forEach(button => {
+        button.addEventListener('click', function(event) {
+            console.log('BIB button clicked');
+            event.preventDefault();
             const bibContainer = this.closest('.publication-item').querySelector('.bib-container');
-            if (bibContainer.style.display === 'none') {
-                bibContainer.textContent = this.getAttribute('data-bib');
+            console.log('BibContainer:', bibContainer);
+            const bibData = this.getAttribute('data-bib');
+            console.log('BibData:', bibData);
+            
+            if (bibContainer.style.display === 'none' || bibContainer.style.display === '') {
+                bibContainer.textContent = bibData;
                 bibContainer.style.display = 'block';
+                console.log('Showing BibTeX');
             } else {
                 bibContainer.style.display = 'none';
+                console.log('Hiding BibTeX');
             }
         });
     });
