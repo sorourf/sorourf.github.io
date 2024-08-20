@@ -235,6 +235,7 @@
                                       year={2023}
                                     }">BIB</button>
                                 </div>
+                                <div class="publication-link" style="display: none;"></div>
                             <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0283603" class="publication-link">PDF</a>
                             </div>
                         </div>
@@ -312,7 +313,7 @@
     </div>
 
     <script defer>
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded');
     const bibLinks = document.querySelectorAll('.bib-link');
     console.log('Found ' + bibLinks.length + ' bib links');
