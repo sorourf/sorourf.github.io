@@ -141,6 +141,42 @@
             white-space: pre-wrap;
             word-wrap: break-word;
         }
+
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .social-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ddd;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .social-icon:hover {
+            background-color: #ccc;
+        }
     </style>
 </head>
 <body>
@@ -317,13 +353,25 @@
                 </section>
 
                 <section id="contact" class="section">
-                    <h2>Contact</h2>
-                    <div class="section-content">
-                        <p>Email: your.email@example.com</p>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></p>
-                        <p>GitHub: <a href="https://github.com/yourusername">Your GitHub Profile</a></p>
+                <h2>Contact</h2>
+                <div class="section-content contact-content">
+                    <div class="contact-info">
+                        <p>Sorour Fatemi</p>
+                        <p>University of Illinois at Chicago</p>
+                        <p>Chicago, IL, USA</p>
+                        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
                     </div>
-                </section>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </section>
+                
             </div>
         </div>
     </div>
