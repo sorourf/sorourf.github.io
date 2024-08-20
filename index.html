@@ -323,5 +323,21 @@
             </div>
         </div>
     </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.bib-link').forEach(button => {
+        button.addEventListener('click', function() {
+            const bibContainer = this.closest('.publication-item').querySelector('.bib-container');
+            if (bibContainer.style.display === 'none') {
+                bibContainer.textContent = this.getAttribute('data-bib');
+                bibContainer.style.display = 'block';
+            } else {
+                bibContainer.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>
