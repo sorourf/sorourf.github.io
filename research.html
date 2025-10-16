@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Sorour Fatemi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Research</h1>
+        </header>
+
+        <main>
+            <section class="research-project">
+                <h2>Multi-Agent LLMs vs. AutoML for Tabular Classification</h2>
+                <p class="coauthors">With Aida Sanatizadeh (Northern Illinois University), Reza Mousavi (University of Virginia), and Ahmed Abbasi (Mendoza College of Business)</p>
+                
+                <p>This project compares large language models (LLMs) with AutoML systems such as AutoGluon on structured data classification tasks. Using a modular multi-agent LLM (MALLM) framework, we tested performance across nine diverse datasets split by the LLMs' training cut-off date. We found that while MALLMs perform competitively on pre-cut-off datasets, their generalization drops on newer data, showing weaknesses in calibration and bias handling.</p>
+                
+                <p class="stage"><em>Stage: Draft is complete and ready for submission.</em></p>
+            </section>
+
+            <section class="research-project">
+                <h2>Learning from Experience or Learning from Outcomes? LLMs in Sequential Decision-Making Under Risk</h2>
+                <p class="coauthors">With Aida Sanatizadeh and Reza Mousavi</p>
+                
+                <p>This study explores whether LLMs develop human-like decision biases when learning from repeated feedback in risky choices. We run 30 LLM agents through 30 sequential gambling decisions (750 trials per agent), with and without outcome feedback. We aim to see if feedback leads LLMs to adopt human decision patterns or remain purely rational.</p>
+                
+                <p class="stage"><em>Stage: Data preparation and analysis are complete.</em></p>
+            </section>
+
+            <section class="research-project">
+                <h2>Judge-Guided Monte Carlo Tree Search for Stock Trading</h2>
+                <p class="coauthors">With Yuheng Hu (Fisher College of Business)</p>
+                
+                <p>This work focuses on improving reasoning and decision-making under delayed feedback, such as in trading. Our Judge-Guided Monte Carlo Tree Search (JG-MCTS) setup combines immediate reasoning evaluation (by a "judge" LLM) with long-term outcome estimation through rollouts. The approach can generalize to domains like medical diagnosis, strategic planning, and policy modeling.</p>
+                
+                <p class="stage"><em>Stage: Data preparation and analysis are complete.</em></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
