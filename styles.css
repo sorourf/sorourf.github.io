@@ -186,3 +186,31 @@ main a:hover {
     text-align: justify !important;
     margin-bottom: 20px !important;
 }
+
+/* Research Section Styling */
+.research-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.research-project h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.publication {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+}
