@@ -14,19 +14,36 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 50%;  /* This makes it circular */
 }
 
 .profile-content {
     flex: 1;
 }
 
-.profile-content header {
-    margin-bottom: 20px;
+.profile-content h1 {
+    margin-top: 0;
 }
 
-.profile-content main p:first-child {
-    margin-top: 0;
+/* Responsive adjustments for profile section */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /* Responsive adjustments for profile section */
