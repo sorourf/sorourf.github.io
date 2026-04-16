@@ -64,6 +64,16 @@
                     <p>My research builds and evaluates multi-agent LLM systems for high-stakes decision support. Three threads run through my work: (1) designing reflection and critic agents that improve the reasoning quality of LLM systems; (2) adapting smaller open-source models through instruction fine-tuning, PEFT, and RLHF for safe, controllable deployment; and (3) measuring how AI tools change expert behavior and professional practice. I am increasingly interested in applying these methods to human-centered domains where culturally-grounded feedback and trustworthy deployment are essential.</p>
                 </section>
                 <h2 class="section-title">Published Papers</h2>
+                <div class="research-project">
+                    <h3>Generalization or Memorization? Multi-Agent vs. Baseline LLMs and AutoML Models for Tabular Classification</h3>
+                    <p class="coauthors">With <a href="https://sites.google.com/view/aida-sanatizadeh" target="_blank">Aida Sanatizadeh</a> (Northern Illinois University), <a href="https://www.commerce.virginia.edu/faculty/rm6uz" target="_blank">Reza Mousavi</a> (University of Virginia McIntire School of Commerce), and <a href="https://ahmedabbasi.com/" target="_blank">Ahmed Abbasi</a> (University of Notre Dame)</p>
+                    <p class="publication"><em>Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2026)</em></p>
+                    
+                    <span class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</span>
+                    <div class="abstract-content">
+                        <p>Large Language Models (LLMs) are increasingly applied to structured tabular data, yet it remains unclear whether their performance stems from genuine reasoning or the memorization of pre-training corpora. This study addresses this gap through a rigorous, contamination-aware evaluation of a representative modular Multi-Agent LLM (MALLM) framework against state-of-the-art AutoML systems and established baselines (TABLET, TABLLM). We evaluate eleven binary classification tasks, explicitly distinguishing between benchmarks likely seen during LLM pre-training and six datasets released after the LLM knowledge cutoff. Results demonstrate a sharp performance dichotomy: while MALLM achieves competitive or superior results on pre-cutoff datasets, it significantly underperforms AutoML frameworks on post-cutoff data, exhibiting poor calibration and high variance on hard instances. Conversely, AutoML models maintain consistent generalization and align confidence with instance hardness. These findings suggest that despite agentic scaffolding, current LLMs cannot yet replace production-grade discriminative models for tabular classification, highlighting the necessity of contamination-free benchmarks to accurately assess tabular reasoning capabilities.</p>
+                    </div>
+                </div>
                 
                 <div class="research-project">
                     <h3>A Comparative Analysis of Instruction Fine-Tuning Large Language Models for Financial Text Classification</h3>
@@ -113,12 +123,12 @@
                 <h2 class="section-title">Ongoing Research</h2>
                 
                 <div class="research-project">
-                    <h3>Multi-Agent LLMs vs. AutoML for Tabular Classification</h3>
-                    <p class="coauthors">With <a href="https://sites.google.com/view/aida-sanatizadeh" target="_blank">Aida Sanatizadeh</a> (Northern Illinois University), <a href="https://www.commerce.virginia.edu/faculty/rm6uz" target="_blank">Reza Mousavi</a> (University of Virginia McIntire School of Commerce), <a href="https://ahmedabbasi.com/" target="_blank">Ahmed Abbasi</a> (University of Notre Dame), and <a href="https://www.commerce.virginia.edu/faculty/bmk2a" target="_blank">Brent Kitchens</a> (University of Virginia McIntire School of Commerce)</p>
+                    <h3>Do Large Language Models Gamble Like Humans? Risk Preferences, Episodic Memory, and Demographic Stereotypes in LLM Decision-Making</h3>
+                    <p class="publication"><em>Poster Presentation, Wharton AI and the Future of Work Conference, 2026</em></p>
                     
                     <span class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</span>
                     <div class="abstract-content">
-                        <p>This project compares large language models (LLMs) with AutoML systems such as AutoGluon on structured data classification tasks. Using a modular multi-agent LLM (MALLM) framework, we tested performance across nine diverse datasets split by the LLMs' training cut-off date. We found that while MALLMs perform competitively on pre-cut-off datasets, their generalization drops on newer data, showing weaknesses in calibration and bias handling.</p>
+                        <p>We investigate whether Large Language Models (LLMs) exhibit human-like risk preferences by replicating the Erev et al. (2017) Choices Prediction Competition (CPC18) paradigm, a sequential decision-making task designed to elicit the description-experience gap, one of the most robust phenomena in behavioral decision science. We test five LLMs (GPT-4o-mini, Claude 3.5 Haiku, Llama 3.1 70B, Llama 3.1 8B, and Qwen 2.5 7B) across three experimental conditions: standard, chain-of-thought (CoT), and persona-conditioned prompting. Across 291,000 LLM decision trials and 84,750 human baseline trials, we find that: (1) all models exhibit a description-experience gap, but its magnitude varies dramatically, with GPT-4o-mini overshooting the human gap while Haiku barely shows one; (2) chain-of-thought reasoning systematically reduces risk-taking, with Qwen-7B's B-rate dropping from 0.759 to 0.182; (3) persona-conditioned prompting reveals that each model encodes different demographic stereotypes, with Llama models most sensitive to age, Haiku to income, and Qwen-7B uniquely to gender with a reversed effect (females more risk-seeking); and (4) open-source models show rigid persona differentiation (ICC > 0.85), suggesting deterministic demographic-to-behavior mappings. GPT-4o-mini achieves the closest fit to human behavior (MSE = 0.025), despite being the smallest proprietary model. These findings have implications for using LLMs as decision-making agents, financial advisors, or behavioral simulacra.</p>
                     </div>
                 </div>
 
